@@ -1,812 +1,787 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Basic Page Needs
-    ================================================== -->
-    <meta charset="u8">
-    <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pallav Kumar Deb</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="portfolio, agency, bootstrap theme, mobile responsive, template, personal">
-    <meta name="author" content="webthemez.com">
-    
-    <!-- Favicons
-    ================================================== -->
-    <link rel="shortcut icon" href="" type="image/x-icon"> 
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <!-- Nivo Lightbox
-    ================================================== -->
-    <link rel="stylesheet" href="css/nivo-lightbox.css" >
-    <link rel="stylesheet" href="css/nivo_lightbox_themes/default/default.css">
+  <title>Pallav Kumar Deb</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    <!-- Slider
-    ================================================== -->
-    <link href="css/owl.carousel.css" rel="stylesheet" media="screen">
-    <link href="css/owl.theme.css" rel="stylesheet" media="screen">
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <!-- Stylesheet
-    ================================================== -->
-    <link rel="stylesheet" type="text/css"  href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
-    <!-- Google Fonts
-    ================================================== -->
-    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    <script type="text/javascript" src="js/modernizr.custom.js"></script>
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
+  <!-- =======================================================
+  * Template Name: iPortfolio - v3.2.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+<style>
+.button {
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
 
-    <!-- Main Navigation 
-    ================================================== -->
-    <nav id="menu" class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="http://www.iitkgp.ac.in/" target="_blank"><img src="img/IIT_Kharagpur_Logo.png" style="width:50px;height:50px;" alt="..."></a>
-              <a class="navbar-brand" href="http://cse.iitkgp.ac.in/~smisra/swan/index.html" target="_blank"><img src="img/swan_logo.png" style="width:50px;height:50px;" alt="..."></a>               
-              <a class="navbar-brand" href="http://www.sensordropsnetworks.com/" target="_blank"><img src="img/sdn_logo.png" style="width:70px;height:50px;" alt="..."></a>             
-            </div>
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+.wrapper {
+    text-align: center;
+}
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-              <ul class="nav navbar-nav navbar-right">
-                <li><a href="#home" class="scroll">Home</a></li>
-                <li><a href="#whatIdo" class="scroll">What I Do</a></li>
-                <li><a href="#about" class="scroll">About</a></li>
-                <li><a href="#works" class="scroll">Works</a></li>
-                <li><a href="#experience" class="scroll">Experience</a></li> 
-                <li><a href="#contact" class="scroll">Contact</a></li>
-              </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav>
+ol {
+  list-style: none;
+  counter-reset: steps;
+}
+ol li {
+  counter-increment: steps;
+}
+.journal::before {
+  content: counter(steps);
+  margin-right: 0.5rem;
+  background: #ff6f00;
+  color: white;
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+  line-height: 1.2em;
+}
+.conference::before {
+  content: counter(steps);
+  margin-right: 0.5rem;
+  background: blue;
+  color: white;
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+  line-height: 1.2em;
+}
+.magazine::before {
+  content: counter(steps);
+  margin-right: 0.5rem;
+  background: green;
+  color: white;
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+  line-height: 1.2em;
+}
+.chapter::before {
+  content: counter(steps);
+  margin-right: 0.5rem;
+  background: yellow;
+  color: white;
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+  line-height: 1.2em;
+}
+ol ol li::before {
+  background: darkorchid;
+}
+</style>
+</head>
 
-    <!-- Home Section
-    ================================================== -->
-    <section id="home">
-        <div class="overlay"> <!-- Overlay Color -->
-            <div class="container"> <!-- container -->
-                <div class="content-heading text-center"> <!-- Input Your Home Content Here -->
-                    <h1>Hi, I am Pallav Kumar Deb</br>
-                    Ph.D. Research Scholar </br>
-                	Research & Development </h1>
-                    <p class="lead">Indian Institute of Technology Kharagpur </br> SensorDrops Networks Pvt. Ltd.</p>
-                    <a href="img/Pukku_Full_CV.pdf" target="_blank" class="scroll goto-btn">Download Resume</a> <!-- Link to your portfolio section -->
-                </div><!-- End Input Your Home Content Here -->
-            </div> <!-- end container -->
-        </div><!-- End Overlay Color -->
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/pukku.jpeg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Pallav Kumar Deb</a></h1>
+        <div class="social-links mt-3 text-center">
+          <!--<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+          <a href="https://www.facebook.com/pallav.deb.7" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/indie.boffin/" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
+          <a href="https://www.linkedin.com/in/pallav-deb-bb09699a/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <!--<li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>What I do</span></a></li>-->
+          <li><a href="#publications" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Publications</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
     </div>
+  </header><!-- End Header -->
 
-    <!-- Intro Section
-    ================================================== -->
-    <section id="intro">
-        <div class="container"> <!-- container -->
-            <div class="row"> <!-- row -->
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Pallav Kumar Deb</h1>
+      <p>I'm a <span class="typed" data-typed-items="Researcher, Creator, Developer"></span></p>
+    </div>
+  </section><!-- End Hero -->
 
-                <div class="col-md-8 col-md-offset-2"> 
-                     <h1>Creating low-cost solutions while addressing basic societal needs</h1>
-                    <p class="lead">Please go through my Profile.</p>
-                </div>
-                
-            </div><!-- end row -->
-        </div><!-- end container -->
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <!--<p class="fst-italic">It's not who I am underneath, but what I do that defines me.</p>-->
+          <h7><em>It's not who I am underneath, but what I do that defines me.<br/></em></h7>
+          <h7 align="center"><em>- Copied from the bat</em></h7>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="assets/img/pukku.jpeg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Ph.D. Research Scholar</h3>
+            <p class="fst-italic">
+              Indian Institute of Technology Kharagpur.
+            </p>
+            <p class="fst-italic">
+              SensorDrops Networks Pvt. Ltd.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>16 Nov 1991</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>https://pallvdeb.github.io/</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91 84369-42458</span></li>
+                  </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <!--<li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>30</span></li>-->
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>M.Tech (IT)</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>pallav.deb@iitkgp.ac.in</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Kharagpur, India</span></li>
+                  <!--<li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>-->
+                </ul>
+              </div>
+            </div>
+            <p style="text-align:justify">
+              I am a Ph.D. research scholar in the Department of Computer Science and Engineering, Indian Institute of Technology, Kharagpur. I work under the supervision of Dr. Sudip Misra in Smart Wireless Applications and Networking (SWAN) Lab. I also work as an R&D consultant with SensorDrops Networks Pvt. Ltd., a STEP-incubated start-up at IIT Kharagpur. My research interests include, but not limited to, networking, resource allocation, fog computing, constrained devices, AI/ML-based solutions, Internet of Things, Industrial Internet of Things, UAVs, Swarm of UAVs, e-health, THz communications, nano-networks.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Facts Section ======= -->
+    <section id="facts" class="facts">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Facts</h2>
+          <h7><em>Created to create!!</em></h7>
+        </div>
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Conferences</strong> <br/>Conferences &amp Workshops</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="9" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Journals</strong> <br/>Journals &amp Transactions</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="count-box">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Others</strong> <br/>Magazines &amp Book chapters</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="count-box">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
+              <p><strong>Research</strong> <br/>in years</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Facts Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <h7><em>Grab a hammer. Start pounding...</em></h7>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">Python <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Matlab <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Latex <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">Android <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">C/C++ <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Docker <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p>I design algorithms and solutions for facilitating complex operations on resource-constrained IoT environments.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>Pallav Kumar Deb</h4>
+              <p><em>Ph.D. Research Scholar</em></p>
+              <ul>
+                <li>Indian Institute of Technology Kharagpur</li>
+                <li>(+91) 84369-42458</li>
+                <li>pallv.deb@iitkgp.ac.in</li>
+                <li>pallv.deb@gmail.com</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Experience</h3>
+            <div class="resume-item">
+              <h4>Ph.D. Research Scholar &amp; Teaching Assistant</h4>
+              <h5>2017 - Present</h5>
+              <p><em>Indian Institute of Technology Kharagpur, India</em></p>
+              <p style="text-align:justify">I work in the Smart Wireless Applications and Networking (SWAN) Laboratory. My research interests include, but not limited to, networking, resource allocation, fog computing, constrained devices, AI/ML-based solutions, Internet of Things, Industrial Internet of Things, UAVs, Swarm of UAVs, e-health, THz communications, and nano-networks. I also work as a teaching assistant in various subjects such as Programming and Data Structures Lab, Software Engineering, and Architecture and Protocols for Internet of Things.</p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="resume-item">
+              <h4>NPTEL: Teaching Assistant</h4>
+              <h5>2020 - Present</h5>
+              <p><em>National Programme on Technology Enhanced Learning (NPTEL)</em></p>
+              <p style="text-align:justify">I am a Teaching Assistant in the popular course Introduction to Internet to Things by Prof. Sudip Misra.</p>
+            </div>
+          
+            <!--<h3 class="resume-title">Professional Experience</h3>-->
+            <div class="resume-item">
+              <h4>R&ampD Consultant</h4>
+              <h5>2018 - Present</h5>
+              <p><em>SensorDrops Networks Pvt. Ltd.</em></p>
+              <p style="text-align:justify">I help in developing multiple Internet of Things (IoT) devices dedicated towards addressing basic societal as well as industrial needs, multiple Android applications for interacting with the IoT devices and also for other activities, such as sensing and actuating. Additionally, I have been working closely with the founders since the creation of SensorDrops Networks Pvt. Ltd.</p>
+            </div>
+            <div class="resume-item">
+              <h4>Tezpur University: Teaching Assistant</h4>
+              <h5>2015 - 2018</h5>
+              <p><em>Tezpur University, India</em></p>
+				<p style="text-align:justify">I did my M.Tech in Information Technology from Tezpur University. During my tenure, I worked as a Teaching Assistant for multiple subjects such as Information and Communication Technology, Introductory Computing, Computer Graphics, and Computer Organization and Architecture.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+    	  <a href="Pukku_Full_CV.pdf" target="_blank" class="button button2">Download Resume</a>
+  	  </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Services Section ======= -->
+    <!--
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>What I do</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon"><i class="bi bi-briefcase"></i></div>
+            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="bi bi-card-checklist"></i></div>
+            <h4 class="title"><a href="">Dolor Sitema</a></h4>
+            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="bi bi-bar-chart"></i></div>
+            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="bi bi-binoculars"></i></div>
+            <h4 class="title"><a href="">Magni Dolores</a></h4>
+            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon"><i class="bi bi-brightness-high"></i></div>
+            <h4 class="title"><a href="">Nemo Enim</a></h4>
+            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon"><i class="bi bi-calendar4-week"></i></div>
+            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
+            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+          </div>
+        </div>
+      </div>
     </section>
-
-    <!-- Service Section
-    ================================================== -->
-    <section id="whatIdo">
-        <div class="container"> <!-- container -->
-
-            <div class="section-header">
-                <h2>What I <span class="highlight"><strong>Do</strong></span></h2>
-                <h5><em>I was created to create...</em></h5>
-                <div class="fancy"><span></span></div>
-            </div>
-
-            <div class="row"> <!-- row -->
-                
-                <div class="col-md-6 text-right">  <!-- Left Content Col 6 -->
-                    <img src="img/me_drone.jpg" class="intro-logo img-responsive" alt="free-template">
-                </div> <!-- End Left Content Col 6 -->
-
-                <div class="col-md-6"> <!-- Right Content Col 6 -->
-				  
-                    <div class="media service"> <!-- Service #4 -->
-                        <div class="media-left media-middle">
-                            <i class="fa fa-bug"></i>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Research & Development</h4>
-                            <p>Design algorithms and solutions for facilitating complex operations on resource-constrained networks.</p>
-                        </div>
-                    </div><!-- end Service #4 -->
-
-                    <div class="media service"> <!-- Service #5 -->
-                        <div class="media-left media-middle">
-                            <i class="fa fa-gear"></i>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Product Development & Deployment</h4>
-                            <p>Design IoT-based solutions according to client needs through SensorDrops Networks, Pvt. Ltd., STEP-incubated start-up at IIT Kharagpur.</p>
-                        </div>
-                    </div> <!-- end Service #5 -->
-
-                    <div class="media service"> <!-- Service #6 -->
-                        <div class="media-left media-middle">
-                            <i class="fa fa-pie-chart"></i>
-                        </div>
-                        <div class="media-body">
-                            <h4 class="media-heading">Mentoring</h4>
-                            <p>Supervise budding students and introduce them to the realm of research and motivate them towards building novel analytical and technical solutions.</p>
-                        </div>
-                    </div> <!-- end Service #6 -->
-                </div><!-- end Right Content Col 6 -->
-                
-            </div><!-- end row -->
-
-        </div><!-- end container -->
-    </section>
-
-    <!-- About Us Section
-    ================================================== -->
-	
-	<section id="about">
- <div class="container"> <!-- container -->
-            <div class="section-header">
-                <h2>Who Am I <span class="highlight"><strong>John</strong></span></h2>
-                <h5><em>It's not who I am underneath, but what I do that defines me.</em></h5>
-                <h5 align="center"><em>- Copied from the bat</em></h5>
-                <div class="fancy"><span></span></div>
-            </div>
-        </div><!-- end container -->	
-	<div class="container">
-	
-		<div class="row">
-			<div class="col-sm-4 col-sm-offset-1 scrollimation fade-right in">
-				<img class="img-responsive img-circle img-center" src="img/pukku.jpeg" alt="">
-			</div>
-			<div class="col-sm-6 col-sm-offset-1 scrollimation fade-left in">
-				<h1>Hello, I am Pallav Kumar Deb...</h1>
-				<p style="text-align:justify">I am a Ph.D. research scholar in the Department of Computer Science and Engineering, Indian Institute of Technology, Kharagpur. I work under the supervision of Dr. Sudip Misra in Smart Wireless Applications and Networking (SWAN) Lab. I also work as an R&D consultant with SensorDrops Networks Pvt. Ltd., a STEP-incubated start-up at IIT Kharagpur. My research interests include, but not limited to, networking, resource allocation, fog computing, constrained devices, AI/ML-based solutions, Internet of Things, Industrial Internet of Things, UAVs, Swarm of UAVs, e-health, THz communications, nano-networks.</p>
-			</div>
-		</div><!--End row -->
-		
-	</div><!--End container -->
-	
-            <div id="counter" class="text-center">
-                <div class="container">
-                    <div class="row"> <!-- Row -->
-                      <div class="col-md-6">
-					     <div class="row">
-						      <div class="counter"> 
-
-                          <div class="col-xs-6 facts"><!-- counter #1 -->
-                            <div class="count-box"> 
-                                <i class="fa fa-bar-chart"></i>
-                                <h4 class="count">2</h4>
-                                <p class="small">Conferences</p>
-                            </div> 
-                          </div><!-- end counter #1 -->
-
-                          <div class="col-xs-6 facts"><!-- counter #2 -->
-                            <div class="count-box">
-                              <i class="fa fa-line-chart"></i>
-                              <h4 class="count">5</h4>
-                              <!-- <h4>Coming Soon</h4> -->
-                              <p class="small">Journals</p>
-                            </div>
-                          </div>
-						  </div>
-						  </div>
-						  <div class="row">	
-							<div class="counter"> 						  
-                          <div class="col-xs-6 facts"> <!-- counter #3 -->
-                            <div class="count-box">
-                              <i class="fa fa-users"></i>
-                              <h4 class="count">3</h4>
-                              <p class="small">SensorDrops Networks</p>
-                            </div>
-                          </div>
-
-                          <div class="col-xs-6 facts"> <!-- counter #4 -->
-                            <div class="count-box">
-                              <i class="fa fa-user"></i>
-                              <h4 class="count">4</h4>
-                              <p class="small">Research</p>
-                            </div>
-                          </div>
- 
-                          </div>
-
-                        </div>
-
-						 </div> 
-					    <div class="col-md-6"><!-- right content col 6 -->
-                        <div> <!-- right content wrapper -->
- 
-                            
-                            <div class="skills"> <!-- skills progress bar -->
-                                <div class="skillset"> <!-- skill #1 -->
-                                    <p>Python</p>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-                                            <span class="sr-only">90% Complete</span>
-                                        </div>
-                                    </div>
-                                </div><!-- end skill #1 -->
-
-                                <div class="skillset"> <!-- skill #2 -->
-                                    <p>Matlab</p>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
-                                            <span class="sr-only">85% Complete</span>
-                                        </div>
-                                    </div>
-                                </div><!-- end skill #2 -->
-
-                                <div class="skillset"> <!-- skill #3 -->
-                                    <p>Latex</p>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100" style="width: 89%;">
-                                            <span class="sr-only">99% Complete</span>
-                                        </div>
-                                    </div>
-                                </div> <!-- end skill #3 -->
-
-                                <div class="skillset"> <!-- skill #4 -->
-                                    <p>Android</p>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-                                            <span class="sr-only">70% Complete</span>
-                                        </div>
-                                    </div>
-                                </div> <!-- end skill #4 -->
-
-                                <div class="skillset"> <!-- skill #5 -->
-                                    <p>C/C++</p>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-                                            <span class="sr-only">50% Complete</span>
-                                        </div>
-                                    </div>
-                                </div><!-- end skill #4 -->
-                            </div> <!-- end skills progress bar -->
-
-                        </div><!-- end right content wrapper -->
-                    </div><!-- end right content col 6 -->
-                       
-                      </div> <!-- End Row -->
-                </div>
-            </div>
-
-</section>
-	 
-    <!-- Works Section
-    ================================================== -->
-    <section id="works">
-        <div class="container">
-            <div class="section-header">
-                <h2>My Works</h2>
-                <h5><em>Some of my published works and more...</em></h5>
-                <div class="fancy"><span></span></div>
-            </div>
-
-            <div class="text-center">
-                <ul class="list-inline cat"> <!-- Portfolio Filter Categories -->
-                    <li><a href="#" data-filter="*" class="active">All</a></li>
-                    <li><a href="#" data-filter=".books">Books</a></li>
-                    <li><a href="#" data-filter=".conf">Conferences</a></li>
-                    <li><a href="#" data-filter=".journ">Journals</a></li>
-                    <li><a href="#" data-filter=".app">Apps</a></li>
-                    <li><a href="#" data-filter=".others">Gallery</a></li>
-                </ul><!-- End Portfolio Filter Categories -->
-            </div>
-
-        </div><!-- End Container -->
-
-        <div class="container-fluid"> <!-- fluid container -->
-             <div id="itemsWork" class="row text-center"> <!-- Portfolio Wrapper Row -->
-
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding conf"> <!-- Works #1 col 3 -->
-                    <div class="box"> 
-                        <div class="hover-bg">
-                            <div class="hover-text off">
-                                <a title="Logo Identity Design" href="img/portfolio/skopedge_icc.png" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/skopedge_icc.png">
-                                    <i class="fa fa-expand"></i>
-                                </a>
-                                <a href="papers/skopedge.pdf" target="_blank"><i class="fa fa-chain"></i></a> <!-- change # with your url to link it to another page -->
-                            </div> 
-                            <img src="img/portfolio/skopedge_icc.png" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
-                        </div>
-                    </div>
-                </div><!-- end Works #1 col 3 -->
-
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding conf"> <!-- Works #1 col 3 -->
-                    <div class="box"> 
-                        <div class="hover-bg">
-                            <div class="hover-text off">
-                                <a title="Logo Identity Design" href="img/portfolio/bc_infocom_wkshp.png" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/bc_infocom_wkshp.png">
-                                    <i class="fa fa-expand"></i>
-                                </a>
-                                <a href="papers/bcws.pdf" target="_blank"><i class="fa fa-chain"></i></a> <!-- change # with your url to link it to another page -->
-                            </div> 
-                            <img src="img/portfolio/bc_infocom_wkshp.png" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding books"> <!-- Works #1 col 3 -->
-                    <div class="box"> 
-                        <div class="hover-bg">
-                            <div class="hover-text off">
-                                <a title="Logo Identity Design" href="img/portfolio/coviscanner_overview.png" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/coviscanner_overview.png">
-                                    <i class="fa fa-expand"></i>
-                                </a>
-                                <a href="papers/coviscanner.pdf" target="_blank"><i class="fa fa-chain"></i></a> <!-- change # with your url to link it to another page -->
-                            </div> 
-                            <img src="img/portfolio/coviscanner_overview.png" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
-                        </div>
-                    </div>
-                </div>
-
-				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding journ"> <!-- Works #1 col 3 -->
-                    <div class="box"> 
-                        <div class="hover-bg">
-                            <div class="hover-text off">
-                                <a title="Logo Identity Design" href="img/portfolio/snav_overview.png" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/snav_overview.png">
-                                    <i class="fa fa-expand"></i>
-                                </a>
-                                <a href="papers/snav.pdf" target="_blank"><i class="fa fa-chain"></i></a> <!-- change # with your url to link it to another page -->
-                            </div> 
-                            <img src="img/portfolio/snav_overview.png" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
-                        </div>
-                    </div>
-                </div><!-- end Works #1 col 3 -->
-
-				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding journ"> <!-- Works #1 col 3 -->
-                    <div class="box"> 
-                        <div class="hover-bg">
-                            <div class="hover-text off">
-                                <a title="Logo Identity Design" href="img/portfolio/deft_overview.png" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/deft_overview.png">
-                                    <i class="fa fa-expand"></i>
-                                </a>
-                                <a href="papers/deft.pdf" target="_blank"><i class="fa fa-chain"></i></a> <!-- change # with your url to link it to another page -->
-                            </div> 
-                            <img src="img/portfolio/deft_overview.png" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
-                        </div>
-                    </div>
-                </div><!-- end Works #1 col 3 -->
-
-				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding journ"> <!-- Works #1 col 3 -->
-                    <div class="box"> 
-                        <div class="hover-bg">
-                            <div class="hover-text off">
-                                <a title="Logo Identity Design" href="img/portfolio/d2cit_overview.png" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/d2cit_overview.png">
-                                    <i class="fa fa-expand"></i>
-                                </a>
-                                <a href="papers/d2cit.pdf" target="_blank"><i class="fa fa-chain"></i></a> <!-- change # with your url to link it to another page -->
-                            </div> 
-                            <img src="img/portfolio/d2cit_overview.png" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
-                        </div>
-                    </div>
-                </div><!-- end Works #1 col 3 -->
-
-				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding journ"> <!-- Works #1 col 3 -->
-                    <div class="box"> 
-                        <div class="hover-bg">
-                            <div class="hover-text off">
-                                <a title="Logo Identity Design" href="img/portfolio/magnum_overview.png" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/magnum_overview.png">
-                                    <i class="fa fa-expand"></i>
-                                </a>
-                                <a href="papers/magnum.pdf" target="_blank"><i class="fa fa-chain"></i></a> <!-- change # with your url to link it to another page -->
-                            </div> 
-                            <img src="img/portfolio/magnum_overview.png" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
-                        </div>
-                    </div>
-                </div><!-- end Works #1 col 3 -->
-
-				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding journ"> <!-- Works #1 col 3 -->
-                    <div class="box"> 
-                        <div class="hover-bg">
-                            <div class="hover-text off">
-                                <a title="Logo Identity Design" href="img/portfolio/fogfl_overview.png" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/fogfl_overview.png">
-                                    <i class="fa fa-expand"></i>
-                                </a>
-                                <a href="papers/fogfl.pdf" target="_blank"><i class="fa fa-chain"></i></a> <!-- change # with your url to link it to another page -->
-                            </div> 
-                            <img src="img/portfolio/fogfl_overview.png" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
-                        </div>
-                    </div>
-                </div><!-- end Works #1 col 3 -->
-
-				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding journ"> <!-- Works #1 col 3 -->
-                    <div class="box"> 
-                        <div class="hover-bg">
-                            <div class="hover-text off">
-                                <a title="Logo Identity Design" href="img/portfolio/phantomch_overview.png" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/phantomch_overview.png">
-                                    <i class="fa fa-expand"></i>
-                                </a>
-                                <a href="papers/phantom_chmodel.pdf" target="_blank"><i class="fa fa-chain"></i></a> <!-- change # with your url to link it to another page -->
-                            </div> 
-                            <img src="img/portfolio/phantomch_overview.png" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
-                        </div>
-                    </div>
-                </div><!-- end Works #1 col 3 -->
-
-				<div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding journ"> <!-- Works #1 col 3 -->
-                    <div class="box"> 
-                        <div class="hover-bg">
-                            <div class="hover-text off">
-                                <a title="Logo Identity Design" href="img/portfolio/rescue_overview.png" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/rescue_overview.png">
-                                    <i class="fa fa-expand"></i>
-                                </a>
-                                <a href="papers/rescue.pdf" target="_blank"><i class="fa fa-chain"></i></a> <!-- change # with your url to link it to another page -->
-                            </div> 
-                            <img src="img/portfolio/rescue_overview.png" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
-                        </div>
-                    </div>
-                </div><!-- end Works #1 col 3 -->
-
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding app others"> <!-- Works #1 col 3 -->
-                    <div class="box"> 
-                        <div class="hover-bg">
-                            <div class="hover-text off">
-                                <a title="Logo Identity Design" href="img/portfolio/c_soon.png" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/c_soon.png">
-                                    <i class="fa fa-expand"></i>
-                                </a>
-                                <a href="#"><i class="fa fa-chain"></i></a> <!-- change # with your url to link it to another page -->
-                            </div> 
-                            <img src="img/portfolio/c_soon.png" class="img-responsive" alt="Image"> <!-- Portfolio Image -->
-                        </div>
-                    </div>
-                </div><!-- end Works #1 col 3 -->
-<!--
-
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding apps"> 
-                    <div class="box">
-                        <div class="hover-bg">
-                            <div class="hover-text off">
-                                <a title="Mobile Application" href="img/portfolio/02.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/02.jpg">
-                                    <i class="fa fa-expand"></i>
-                                </a>
-                                <a href="#"><i class="fa fa-chain"></i></a>
-                            </div>
-                            <img src="img/portfolio/02.jpg" class="img-responsive" alt="Image"> 
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding others brand">
-                    <div class="box">
-                        <div class="hover-bg">
-                            <div class="hover-text off">
-                                <a title="Freedom Project #1" href="img/portfolio/03.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/03.jpg">
-                                    <i class="fa fa-expand"></i>
-                                </a>
-                                <a href="#"><i class="fa fa-chain"></i></a>
-                            </div>
-                            <img src="img/portfolio/03.jpg" class="img-responsive" alt="Image"> 
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 nopadding others web"> 
-                    <div class="box">
-                        <div class="hover-bg">
-                            <div class="hover-text off">
-                                <a title="Freedom Project #1" href="img/portfolio/04.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/04.jpg">
-                                    <i class="fa fa-expand"></i>
-                                </a>
-                                <a href="#"><i class="fa fa-chain"></i></a>
-                            </div>
-                            <img src="img/portfolio/04.jpg" class="img-responsive" alt="Image"> 
-                        </div>
-                    </div>
-                </div> 
-
-                <div class="col-xs-12 col-sm-6 col-md-3 nopadding web others">
-                    <div class="box">
-                        <div class="hover-bg">
-                            <div class="hover-text off">
-                                <a title="Freedom Project #1" href="img/portfolio/05.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/05.jpg">
-                                    <i class="fa fa-expand"></i>
-                                </a>
-                                <a href="#"><i class="fa fa-chain"></i></a>
-                            </div>
-                            <img src="img/portfolio/05.jpg" class="img-responsive" alt="Image"> 
-                        </div>
-                    </div>
-                </div> 
-
-                <div class="col-xs-12 col-sm-6 col-md-3 nopadding app">  
-                    <div class="box">
-                        <div class="hover-bg">
-                            <div class="hover-text off">
-                                <a title="Freedom Project #1" href="img/portfolio/06.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/06.jpg">
-                                    <i class="fa fa-expand"></i>
-                                </a>
-                                <a href="#"><i class="fa fa-chain"></i></a>
-                            </div>
-                            <img src="img/portfolio/06.jpg" class="img-responsive" alt="Image">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-3 nopadding web brand">
-                    <div class="box">
-                        <div class="hover-bg">
-                            <div class="hover-text off">
-                                <a title="Freedom Project #1" href="img/portfolio/07.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/07.jpg">
-                                    <i class="fa fa-expand"></i>
-                                </a>
-                                <a href="#"><i class="fa fa-chain"></i></a>
-                            </div>
-                            <img src="img/portfolio/07.jpg" class="img-responsive" alt="Image">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xs-12 col-sm-6 col-md-3 nopadding app">
-                    <div class="box"> 
-                        <div class="hover-bg">
-                            <div class="hover-text off">
-                                <a title="Freedom Project #1" href="img/portfolio/08.jpg" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/portfolio/08.jpg">
-                                    <i class="fa fa-expand"></i>
-                                </a>
-                                <a href="#"><i class="fa fa-chain"></i></a>
-                            </div>
-                            <img src="img/portfolio/08.jpg" class="img-responsive" alt="Image">
-                        </div> 
-                    </div>
-                </div> 
-                -->
-            </div> 
-
-        </div> <!-- End Container-Fluid -->
-    </section>
-
-    <!-- experience Section
-    ================================================== -->
-    <section id="experience">
-        <div class="container"> <!-- container -->
-            <div class="section-header">
-                <h2>My Experience</h2>
-                <h5><em>Events I have been a part of...</em></h5>
-                <div class="fancy"><span></span></div>
-            </div>
-        </div><!-- end container -->
-
-        <div class="gray-bg"> <!-- fullwidth gray background -->
-            <div class="container"><!-- container --> 
-                <div id="experience" class="row"> <!-- row -->
-
-                    <div class="col-md-10 col-md-offset-1">
-
-                        <div class="media experience"> <!-- experience #1 -->
-                            <div class="media-right media-middle">
-                                <i class="fa fa-paw"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Indian Institute of Technology Kharagpur</h4>
-                                <h5>Ph.D. Research Scholar & Teaching Assistant</h5>
-								<h5>2017 to Present</h5>
-                                <p>I work in the Smart Wireless Applications and Networking (SWAN) Laboratory. My research interests include, but not limited to, networking, resource allocation, fog computing, constrained devices, AI/ML-based solutions, Internet of Things, Industrial Internet of Things, UAVs, Swarm of UAVs, e-health, THz communications, and nano-networks. I also work as a teaching assistant in various subjects such as Programming and Data Structures Lab, Software Engineering, and Architecture and Protocols for Internet of Things.</p>
-                            </div>
-                        </div><!-- experience #1 -->
-
-                        <div class="media experience"> <!-- experience #2 -->
-                            <div class="media-right media-middle">
-                                <i class="fa fa-paw"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">National Programme on Technology Enhanced Learning (NPTEL)</h4>
-                                <h5>Teaching Assistant</h5>
-								<h5>2020 to Present</h5>
-                                <p>I am a Teaching Assistant in the popular course Introduction to Internet to Things by Prof. Sudip Misra.</p>
-                            </div>
-                        </div><!-- experience #2 -->
-
-                        <div class="media experience"> <!-- experience #3 -->
-                            <div class="media-right media-middle">
-                                <i class="fa fa-paw"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">SensorDrops Networks Pvt. Ltd.</h4>
-                                <h5>R&D Consultant</h5>
-								<h5>2018 to Present</h5>
-                                <p>I help in developing multiple Internet of Things (IoT) devices dedicated towards addressing basic societal as well as industrial needs, multiple Android applications for interacting with the IoT devices and also for other activities, such as sensing and actuating. Additionally, I have been working closely with the founders since the creation of SensorDrops Networks Pvt. Ltd.</p>
-                            </div>
-                        </div><!-- experience #3 -->
-
-                        <div class="media experience"> <!-- experience #4 -->
-                            <div class="media-right media-middle">
-                                <i class="fa fa-paw"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">Tezpur University</h4>
-                                <h5>Teaching Assistant</h5>
-								<h5>2015 to 2017</h5>
-                                <p>I did my M.Tech in Information Technology from Tezpur University. During my tenure, I worked as a Teaching Assistant for multiple subjects such as Information and Communication Technology, Introductory Computing, Computer Graphics, and Computer Organization and Architecture.</p>
-                            </div>
-                        </div><!-- experience #4 -->
-                        
-                        <div class="media experience"> <!-- experience #4 -->
-                            <div class="media-right media-middle">
-                                <i class="fa fa-paw"></i>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">West Coast Frozen Foods Pvt. Ltd.</h4>
-                                <h5>In-house Software Developer</h5>
-								<h5>Jul 2014 to Dec 2014</h5>
-                                <p>I Assisted in creation of multiple websites and developed a smart inventory system for incoming and outgoing packages.</p>
-                            </div>
-                        </div><!-- experience #4 -->                        
-
-                    </div>
-
-                </div> <!-- end row -->
-            </div><!-- end container -->
-        </div>  <!-- end fullwidth gray background -->
-    </section>
-
-    
-    <!-- Contact Section
-    ================================================== -->
-    <section id="contact">
-
-        <div class="container"> <!-- container -->
-            <div class="section-header">
-                <h2>Keep In Touch With ME</h2>
-                <h5><em>Lets say Hello...</em></h5>
-                <div class="fancy"><span></span></div>
-            </div>
-        </div><!-- end container -->
- 
-        <div class="container"><!-- container -->
-            <div class="row"> <!-- outer row -->
-                <div class="col-md-10 col-md-offset-1"> <!-- col 10 with offset 1 to centered -->
-                    <div class="row"> <!-- nested row -->
-
-                        <!-- contact detail using col 4 -->
-                        <div class="col-md-4">  
-                            <div class="contact-detail">
-                                <i class="fa fa-map-marker"></i>
-                                <h4>SWAN Lab, Takshashila Building, IIT Kharagpur</h4> <!-- address -->
-                            </div>
-                        </div>
-                        <!-- contact detail using col 4 -->
-                        <div class="col-md-4">
-                            <div class="contact-detail">
-                                <i class="fa fa-envelope-o"></i>
-                                <h4>pallv.deb@gmail.com</h4>
-                                <h4>pallv.deb@iitkgp.ac.in</h4><!-- email add -->
-                            </div>
-                        </div>
-
-                        <!-- contact detail using col 4 -->
-                        <div class="col-md-4">
-                            <div class="contact-detail">
-                                <i class="fa fa-phone"></i>
-                                <h4>(+91)84369-42458</h4> <!-- phone no. -->
-                            </div>
-                        </div>
-
-                    </div> <!-- end nested row -->
-                </div> <!-- end col 10 with offset 1 to centered -->
-            </div><!-- end outer row -->
-
-            <div class="row text-center"> <!-- contact form outer row with centered text-->
-                <div class="col-md-10 col-md-offset-1"> <!-- col 10 with offset 1 to centered -->
-                    <form action="mailto:pallv.deb@gmail.com" method = "post" id="contact-form" class="form" name="sentMessage" novalidate> <!-- form wrapper -->
-
-                        <div class="row"> <!-- nested inner row -->
-
-                            <!-- Input your name -->
-                            <div class="col-md-4">
-                                <div class="form-group"> <!-- Your name input -->
-                                    <input type="text" autocomplete="off" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-
-                            <!-- Input your email -->
-                            <div class="col-md-4">
-                                <div class="form-group"> <!-- Your email input -->
-                                    <input type="email" autocomplete="off" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-
-                            <!-- Input your Phone no. -->
-                            <div class="col-md-4">
-                                <div class="form-group"> <!-- Your email input -->
-                                    <input type="text" autocomplete="off" class="form-control" placeholder="Your Phone No. *" id="phone" required data-validation-required-message="Please enter your phone no.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-
-                        </div><!-- end nested inner row -->
-
-                        <!-- Message Text area -->
-                        <div class="form-group"> <!-- Your email input -->
-                            <textarea class="form-control" rows="7" placeholder="Your message..." id="message" required data-validation-required-message="Please enter a message."></textarea>
-                            <p class="help-block text-danger"></p>
-                            <div id="success"></div>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn color">Send Message</button> <!-- Send button -->
-
-                    </form><!-- end form wrapper -->
-                </div><!-- end col 10 with offset 1 to centered -->
-            </div> <!-- end contact form outer row with centered text-->
-
-        </div><!-- end container -->
-
-    </section>
-
-    <!-- Footer 
-    ================================================== -->
-    <section id="footer">
-        <div class="container"><!-- container -->
-		 <ul class="list-inline social pull-left">
-                <li><a href="https://www.facebook.com/pallav.deb.7" target="_blank"><i class="fa fa-facebook"></i></a></li> <!-- Change # With your FB Link -->
-                <!--<li><a href="#"><i class="fa fa-twitter"></i></a></li> 
-                <li><a href="#"><i class="fa fa-google-plus"></i></a></li> 
-                <li><a href="#"><i class="fa fa-behance"></i></a></li> -->
-                <li><a href="https://www.linkedin.com/in/pallav-deb-bb09699a/" target="_blank"><i class="fa fa-linkedin"></i></a></li> <!-- Change # With your LinkedIn Link --> 
+	-->
+    <!-- End Services Section -->
+
+
+	 <section id="publications" class="portfolio section-bg">
+	      <div class="container">
+	        <div class="section-title">
+	          <h2>Publications</h2>
+	        </div>
+	        <h3 class="resume-title">Journals</h3>
+	        <ol>
+			  <li class="journal"><b>P. K. Deb</b>, A. Mukherjee, and S. Misra, "XiA: Send-it-Anyway Q-Routing for 6G-Enabled UAV-LEO Communications", <i>in <b>IEEE Transactions on Network Science and Engineering</i></b>, 2021. </li>
+			  <li class="journal"><b>P. K. Deb</b>, S. Misra, and A. Mukherjee, "Latency-Aware Horizontal Computation Offloading for Parallel Processing in Fog-Enabled IoT", <i>in <b>IEEE Systems Journal</i></b>, 2021.</li>
+			  <li class="journal">S. Misra, A. Mukherjee, and <b>P. K. Deb</b>, "Channel Modeling of IoT Phantom Networks: Communications in the THz Band", <i>in <b>Transactions of the Indian National Academy of Engineering</i></b>, 2021. <a href="https://pallvdeb.github.io/papers/coviscanner.pdf" target="_blank">Link</a></li>
+			  <li class="journal">N. Pathak, <b>P. K. Deb</b>, A. Mukherjee, and S. Misra, "IoT-to-the-Rescue: A Survey of IoT Solutions for COVID-19-like Pandemics", <i>in <b>IEEE Internet of Things Journal</i></b>, 2021. <a href="https://pallvdeb.github.io/papers/rescue.pdf" target="_blank">Link</a></li>
+			  <li class="journal">S. Misra, <b>P. K. Deb</b>, N. Koppala, A. Mukherjee, and S. Mao, "S-Nav: Safety-Aware IoT Navigation Tool for Avoiding COVID-19 Hotspots", <i>in <b>IEEE Internet of Things Journal</b></i>, 2020. <a href="https://pallvdeb.github.io/papers/snav.pdf" target="_blank">Link</a></li>
+			  <li class="journal">S. Misra, S. P. Rachuri, <b>P. K. Deb</b>, and A. Mukherjee, "Multi-Armed Bandit-based Decentralized Computation Offloading in Fog-Enabled IoT", <i>in <b>IEEE Internet of Things Journal</b></i>, 2020. <a href="https://pallvdeb.github.io/papers/d2cit.pdf" target="_blank">Link</a></li>
+			  <li class="journal"><b>P. K. Deb</b>, S. Misra, T. Sarkar, and A. Mukherjee, "Magnum: A Distributed Framework for Enabling Transfer Learning in B5G-Enabled Industrial-IoT", <i>in <b>IEEE Transactions on Industrial Informatics</b></i>, 2020. <a href="https://pallvdeb.github.io/papers/magnum.pdf" target="_blank">Link</a></li>
+			  <li class="journal">R. Saha, S. Misra, and <b>P. K. Deb</b>, "FogFL: Fog Assisted Federated Learning for ResourceConstrained IoT Devices", <i>in <b>IEEE Internet of Things Journal</b></i>, 2020. <a href="https://pallvdeb.github.io/papers/fogfl.pdf" target="_blank">Link</a></li>
+			  <li class="journal"><b>P. K. Deb</b>, C. Roy, A. Roy, and S. Misra, "DEFT: Decentralized Multiuser Computation Offloading in a Fog-Enabled IoV Environment", <i>in <b>IEEE Transactions on Vehicular Technology</b></i>, 2020. <a href="https://pallvdeb.github.io/papers/deft.pdf" target="_blank">Link</a></li>
+			</ol>
+			<h3 class="resume-title">Conferences</h3>
+	        <ol>
+			  <li class="conference">S. Misra, <b>P. K. Deb</b>, N. Pathak, and A. Mukherjee, "Blockchain-Enabled SDN for Securing FogBased Resource-Constrained IoT", <i><b>IEEE INFOCOM Workshop</b></i>,Toronto, Canada, July 6-9, 2020. <a href="https://pallvdeb.github.io/papers/bcws.pdf" target="_blank">Link</a></li>
+			  <li class="conference"><b>P. K. Deb</b>, S. Misra, A. Mukherjee, and A. Jamalipour, "SkopEdge: A Traffic-Aware EdgeBased Remote Auscultation Monitor", <i><b>IEEE International Conference on Communications (ICC)</b></i>, Dublin, Ireland, June 7-11, 2020. <a href="https://pallvdeb.github.io/papers/skopedge.pdf" target="_blank">Link</a></li>
+			</ol>
+			<h3 class="resume-title">Magazines</h3>
+			<ol>
+			  <li class="magazine"><b>P. K. Deb</b>, A. Mukherjee, and S. Misra, "CovChain: Blockchain-Enabled Identity Preservation and Anti-Infodemics for COVID-19", <i><b>IEEE Network Magazine</b></i>, 2021.</li>
+			  <li class="magazine"><b>P. K. Deb</b>, S. Misra, A. Mukherjee, and S. Shaw, "Eaves: An IoT-Based Acoustic Social Distancing Assistant for Pandemic-Like Situations", <i><b>IEEE IoT Magazine</b></i>, 2021.</li>
+			</ol>
+			<h3 class="resume-title">Book Chapters</h3>
+			<ol>
+				<li class="chapter"><b>P. K. Deb</b>, S. Misra, A. Mukherjee, and A. Bandyopadhyay, "Containing the Spread of COVID-19 with IoT: A Visual Tracing Approach", <i><b>Computational Modelling and Data Analysis in COVID-19 Research</b></i>, CRC Press, USA, 2021. <a href="https://pallvdeb.github.io/papers/coviscanner.pdf" target="_blank">Link</a></li>
+			</ol>
+	      </div>
+	  </section>
+
+    <!-- ======= Portfolio Section ======= -->
+    <!--
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
             </ul>
-            <p class="pull-right"> © 2016 Site Name. All rights reserved. Template by : <a href="http://webthemez.com">webthemez</a></p> <!-- copyright text here-->
-           
-        </div><!-- end container -->
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
     </section>
-    
+	-->
+	<!-- End Portfolio Section -->
 
+    <!-- ======= Testimonials Section ======= -->
+    <!--
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container">
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script type="text/javascript" src="js/bootstrap.js"></script>
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
 
-    <script type="text/javascript" src="js/owl.carousel.js"></script><!-- Owl Carousel Plugin -->
+        <div class="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
 
-    <script type="text/javascript" src="js/SmoothScroll.js"></script> 
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                <h3>Saul Goodman</h3>
+                <h4>Ceo &amp; Founder</h4>
+              </div>
+            </div>
+			-->
+            <!-- End testimonial item -->
+            <!--
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+            <!--
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+              </div>
+            </div><!-- End testimonial item -->
+            <!--
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+              </div>
+            </div><!-- End testimonial item -->
+            <!--
+            <div class="swiper-slide">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+              </div>
+            </div><!-- End testimonial item -->
+<!--
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
 
-    <!-- Parallax Effects -->
-    <script type="text/javascript" src="js/skrollr.js"></script>
-    <script type="text/javascript" src="js/imagesloaded.js"></script>
+      </div>
+    </section><!-- End Testimonials Section -->
 
-    <!-- Portfolio Filter -->
-    <script type="text/javascript" src="js/jquery.isotope.js"></script>
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
 
-    <!-- LightBox Nivo -->
-    <script type="text/javascript" src="js/nivo-lightbox.min.js"></script>
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>This section is <b><i>under development</i></b>. Feel free to contact me over mail.</p>
+        </div>
 
-    <!-- Contact page-->
-    <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
-    <script type="text/javascript" src="js/contact.js"></script>
+        <div class="row" data-aos="fade-in">
 
-    <!-- Javascripts
-    ================================================== -->
-    <script type="text/javascript" src="js/main.js"></script>
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Indian Institute of Technology Kharagpur<br>Pin: 721301</p>
+              </div>
 
-  </body>
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>pallv.deb@iitkgp.ac.in <br> pallv.deb@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 84369-42458</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>iPortfolio</span></strong>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
